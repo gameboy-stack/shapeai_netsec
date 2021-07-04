@@ -5,7 +5,7 @@ def md5hash(text):
     print("this is md5",res.hexdigest())
 
 def sha256hash(text):
-    res = hl.256(text.encode())
+    res = hl.sha256(text.encode())
     print("this is sha256")
 
 def sha512hash(text):
@@ -29,4 +29,3 @@ choice = input("""
 Enter Your Choice:-""")
 md5hash(inptext)
 
-hello
